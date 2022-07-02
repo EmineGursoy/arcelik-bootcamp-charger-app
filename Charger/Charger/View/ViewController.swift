@@ -21,30 +21,30 @@ class ViewController: UIViewController {
     //UI is set
     private func setUpUI(){
         //Background color set
-        self.view.backgroundColor = .systemGray6
+        self.view.backgroundColor = UIColor(named: "Charcoal grey")
         
         //Button configured
         logInButton.setTitle("GİRİŞ YAP", for: .normal)
-        logInButton.backgroundColor = .white
-        logInButton.tintColor = .black
+        logInButton.backgroundColor = UIColor(named: "solid  - white")
+        logInButton.tintColor = UIColor(named: "Dark")
         logInButton.layer.cornerRadius = 30
         logInButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         
         //TextField configured
         emailTextField.placeholder = "E-POSTA ADRESİNİZ:"
-        emailTextField.textColor = .darkGray
+        emailTextField.textColor = UIColor(named: "grayscale -  gray 25")
         emailTextField.borderStyle = .roundedRect
         
         //Title label configured
         titleLabel.textAlignment = .center
-        titleLabel.textColor = .white
+        titleLabel.textColor = UIColor(named: "solid  - white")
         titleLabel.font = .boldSystemFont(ofSize: 30)
         titleLabel.text = "Charger'a hoş geldiniz."
         titleLabel.layer.masksToBounds = true
         
         //Label configured
         explanationLabel.textAlignment = .center
-        explanationLabel.textColor = .gray
+        explanationLabel.textColor = UIColor(named: "grayscale -  gray 25")
         explanationLabel.font = .systemFont(ofSize: 20)
         explanationLabel.text = "Charger'ı kullanmak için giriş yapmanız gerekiyor."
         explanationLabel.numberOfLines = 0
