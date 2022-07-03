@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="-897.10144927536237" y="58.928571428571423"/>
         </scene>
-        <!--Giriş Yapın-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Charger" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Charger" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,17 +120,76 @@
                             <constraint firstItem="pb3-IT-pae" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="zWt-2l-Sqr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Giriş Yapın" id="dlk-7G-3eT"/>
+                    <navigationItem key="navigationItem" id="dlk-7G-3eT"/>
                     <connections>
                         <outlet property="emailTextField" destination="3lW-Fk-3pM" id="eg4-7g-SYa"/>
                         <outlet property="explanationLabel" destination="5QE-dO-Ptn" id="TMk-tE-Ixi"/>
                         <outlet property="logInButton" destination="pb3-IT-pae" id="F0R-1h-G4Z"/>
                         <outlet property="titleLabel" destination="Uyp-yc-nlf" id="nfT-Dd-51e"/>
+                        <segue destination="LME-Fg-LOL" kind="show" id="Usa-Re-e2d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="718.84057971014499" y="58.928571428571423"/>
+        </scene>
+        <!--Appointments View Controller-->
+        <scene sceneID="Qq2-fT-DSK">
+            <objects>
+                <viewController storyboardIdentifier="AppointmentsViewController" id="LME-Fg-LOL" customClass="AppointmentsViewController" customModule="Charger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ah4-hc-4bT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPF-Eb-534">
+                                <rect key="frame" x="20" y="395" width="364" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJq-Hd-SsP">
+                                <rect key="frame" x="30" y="528" width="364" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOU-yc-Zcd">
+                                <rect key="frame" x="76" y="720" width="266" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="logInButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k86-rN-paq"/>
+                                    <action selector="makeAppointmentClicked:" destination="LME-Fg-LOL" eventType="touchUpInside" id="yPE-dP-GoL"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5so-4e-Rxz">
+                                <rect key="frame" x="116" y="172" width="182" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="Lk0-Q8-wBd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EB4-tB-gG4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5so-4e-Rxz" firstAttribute="leading" secondItem="EB4-tB-gG4" secondAttribute="leading" constant="116" id="TCv-gE-Fq2"/>
+                            <constraint firstItem="5so-4e-Rxz" firstAttribute="top" secondItem="EB4-tB-gG4" secondAttribute="top" constant="84" id="eoz-g3-oQx"/>
+                            <constraint firstItem="EB4-tB-gG4" firstAttribute="trailing" secondItem="5so-4e-Rxz" secondAttribute="trailing" constant="116" id="j2v-cI-fSA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ctl-hH-3sv"/>
+                    <connections>
+                        <outlet property="explanationLabel" destination="hJq-Hd-SsP" id="g8b-dq-bFa"/>
+                        <outlet property="logoImageView" destination="5so-4e-Rxz" id="hCz-uh-sUh"/>
+                        <outlet property="makeAppointmentButton" destination="zOU-yc-Zcd" id="QrU-np-uwc"/>
+                        <outlet property="titleLabel" destination="oPF-Eb-534" id="yTC-Ks-rLc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tnX-yQ-8JA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1573.913043478261" y="58.928571428571423"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gVv-Dn-eHA">

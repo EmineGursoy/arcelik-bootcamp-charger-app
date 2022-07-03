@@ -12,13 +12,14 @@ import UIKit
 class SplashController: UIViewController {
     
     @IBOutlet weak var logoImageView: UIImageView!
-    
     @IBOutlet weak var appNameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setUpUI()
     }
+    
     // Notification and location permission requested
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -39,6 +40,8 @@ class SplashController: UIViewController {
     
     //UI is set
     private func setUpUI(){
+        
+        logoImageView.image = UIImage(named:"Badge1")
         appNameLabel.text = "Charger"
         appNameLabel.textAlignment = .center
         appNameLabel.font = UIFont.boldSystemFont(ofSize: 30)

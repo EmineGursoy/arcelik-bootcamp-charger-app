@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var logInButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
@@ -22,6 +23,13 @@ class ViewController: UIViewController {
     private func setUpUI(){
         //Background color set
         self.view.backgroundColor = UIColor(named: "Charcoal grey")
+        
+        //Background color of UINavigationItem changed
+        self.navigationController?.navigationBar.barTintColor  = UIColor(named: "Charcoal grey")
+        
+        //UINavigationItem configured
+        self.navigationItem.title = "Randevular"
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor:UIColor(named: "solid  - white")]
         
         //Button configured
         logInButton.setTitle("GİRİŞ YAP", for: .normal)
@@ -49,11 +57,15 @@ class ViewController: UIViewController {
         explanationLabel.text = "Charger'ı kullanmak için giriş yapmanız gerekiyor."
         explanationLabel.numberOfLines = 0
         explanationLabel.layer.masksToBounds = true
-        
-        
        }
     
+    
+    //When the login button is clicked, transition to the appointment page is provided.
     @IBAction func logInButtonClicked(_ sender: Any) {
+        
+        if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AppointmentsViewController") as? AppointmentsViewController {
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
 

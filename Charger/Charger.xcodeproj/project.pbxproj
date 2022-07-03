@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CC7C02B8286CEE1B008ADF59 /* LocationWhenInUsePermission in Frameworks */ = {isa = PBXBuildFile; productRef = CC7C02B7286CEE1B008ADF59 /* LocationWhenInUsePermission */; };
 		CC7C02BA286CEE1B008ADF59 /* NotificationPermission in Frameworks */ = {isa = PBXBuildFile; productRef = CC7C02B9286CEE1B008ADF59 /* NotificationPermission */; };
+		CCBD27EA28705B4500BF8D89 /* AppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBD27E928705B4500BF8D89 /* AppointmentsViewController.swift */; };
 		CCE3AC53286C3EA100770052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE3AC52286C3EA100770052 /* AppDelegate.swift */; };
 		CCE3AC55286C3EA100770052 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE3AC54286C3EA100770052 /* SceneDelegate.swift */; };
 		CCE3AC57286C3EA100770052 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE3AC56286C3EA100770052 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CCBD27E928705B4500BF8D89 /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
 		CCE3AC4F286C3EA100770052 /* Charger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Charger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE3AC52286C3EA100770052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCE3AC54286C3EA100770052 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			children = (
 				CCE3AC8F286C612600770052 /* SplashController.swift */,
 				CCE3AC56286C3EA100770052 /* ViewController.swift */,
+				CCBD27E928705B4500BF8D89 /* AppointmentsViewController.swift */,
 				CCE3AC54286C3EA100770052 /* SceneDelegate.swift */,
 				CCE3AC52286C3EA100770052 /* AppDelegate.swift */,
 			);
@@ -308,6 +311,7 @@
 				CCE3AC57286C3EA100770052 /* ViewController.swift in Sources */,
 				CCE3AC53286C3EA100770052 /* AppDelegate.swift in Sources */,
 				CCE3AC55286C3EA100770052 /* SceneDelegate.swift in Sources */,
+				CCBD27EA28705B4500BF8D89 /* AppointmentsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
