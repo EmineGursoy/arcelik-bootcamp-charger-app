@@ -17,17 +17,20 @@ class AppointmentsViewController: UIViewController {
         super.viewDidLoad()
 
         setUpUI()
+        
     }
     
     private func setUpUI(){
         
         //Background color set
-        self.view.backgroundColor = UIColor(named: "Charcoal grey")
+        self.view.backgroundColor = UIColor(named: "Dark")
         
         //UINavigationItem configured
-        self.navigationItem.title = "Giriş Yapın"
+        self.navigationItem.title = "Randevular"
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "Badge"), style: .plain, target: self, action: #selector(profileClicked))
-
+        
+        navigationItem.backButtonTitle = ""
+        
         //Back button is hidden
         self.navigationItem.hidesBackButton = true
 
@@ -61,8 +64,13 @@ class AppointmentsViewController: UIViewController {
         
        }
     
+    //When the profile button is clicked, transition to the profile page is provided.
     @objc func profileClicked() {
         print("profile clicked")
+        
+        if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewController") as? ProfileViewController {
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     @IBAction func makeAppointmentClicked(_ sender: Any) {

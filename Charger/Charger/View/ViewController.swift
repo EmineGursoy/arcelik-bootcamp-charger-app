@@ -22,13 +22,13 @@ class ViewController: UIViewController {
     //UI is set
     private func setUpUI(){
         //Background color set
-        self.view.backgroundColor = UIColor(named: "Charcoal grey")
+        self.view.backgroundColor = UIColor(named: "Dark")
         
         //Background color of UINavigationItem changed
         self.navigationController?.navigationBar.barTintColor  = UIColor(named: "Charcoal grey")
         
         //UINavigationItem configured
-        self.navigationItem.title = "Randevular"
+        self.navigationItem.title = "Giriş Yapın"
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor:UIColor(named: "solid  - white")]
         
         //Button configured
