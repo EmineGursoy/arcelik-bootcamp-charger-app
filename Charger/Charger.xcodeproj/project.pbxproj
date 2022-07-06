@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		CC7C02B8286CEE1B008ADF59 /* LocationWhenInUsePermission in Frameworks */ = {isa = PBXBuildFile; productRef = CC7C02B7286CEE1B008ADF59 /* LocationWhenInUsePermission */; };
 		CC7C02BA286CEE1B008ADF59 /* NotificationPermission in Frameworks */ = {isa = PBXBuildFile; productRef = CC7C02B9286CEE1B008ADF59 /* NotificationPermission */; };
+		CC8A05C7287384B0007B28C0 /* CitySelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A05C6287384B0007B28C0 /* CitySelectionViewModel.swift */; };
+		CC8A05CC28738F51007B28C0 /* AuthenticationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A05CB28738F51007B28C0 /* AuthenticationHandler.swift */; };
 		CCBD27EA28705B4500BF8D89 /* AppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBD27E928705B4500BF8D89 /* AppointmentsViewController.swift */; };
 		CCBD27F22871A42F00BF8D89 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBD27F12871A42F00BF8D89 /* ProfileViewController.swift */; };
+		CCBD27FA2871FB9300BF8D89 /* CitySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBD27F92871FB9300BF8D89 /* CitySelectionViewController.swift */; };
+		CCBD280328721ECE00BF8D89 /* CityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBD280228721ECE00BF8D89 /* CityService.swift */; };
+		CCBD280C28722F3700BF8D89 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBD280A28722F3600BF8D89 /* CityTableViewCell.swift */; };
+		CCBD280D28722F3700BF8D89 /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCBD280B28722F3600BF8D89 /* CityTableViewCell.xib */; };
 		CCE3AC53286C3EA100770052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE3AC52286C3EA100770052 /* AppDelegate.swift */; };
 		CCE3AC55286C3EA100770052 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE3AC54286C3EA100770052 /* SceneDelegate.swift */; };
-		CCE3AC57286C3EA100770052 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE3AC56286C3EA100770052 /* ViewController.swift */; };
+		CCE3AC57286C3EA100770052 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE3AC56286C3EA100770052 /* LoginViewController.swift */; };
 		CCE3AC5A286C3EA100770052 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE3AC58286C3EA100770052 /* Main.storyboard */; };
 		CCE3AC5C286C3EA400770052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCE3AC5B286C3EA400770052 /* Assets.xcassets */; };
 		CCE3AC5F286C3EA400770052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE3AC5D286C3EA400770052 /* LaunchScreen.storyboard */; };
@@ -40,12 +46,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC8A05C6287384B0007B28C0 /* CitySelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionViewModel.swift; sourceTree = "<group>"; };
+		CC8A05CB28738F51007B28C0 /* AuthenticationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHandler.swift; sourceTree = "<group>"; };
 		CCBD27E928705B4500BF8D89 /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
 		CCBD27F12871A42F00BF8D89 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CCBD27F92871FB9300BF8D89 /* CitySelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionViewController.swift; sourceTree = "<group>"; };
+		CCBD280228721ECE00BF8D89 /* CityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityService.swift; sourceTree = "<group>"; };
+		CCBD280A28722F3600BF8D89 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		CCBD280B28722F3600BF8D89 /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
 		CCE3AC4F286C3EA100770052 /* Charger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Charger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE3AC52286C3EA100770052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCE3AC54286C3EA100770052 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CCE3AC56286C3EA100770052 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCE3AC56286C3EA100770052 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CCE3AC59286C3EA100770052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCE3AC5B286C3EA400770052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCE3AC5E286C3EA400770052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -117,6 +129,7 @@
 				CCE3AC5B286C3EA400770052 /* Assets.xcassets */,
 				CCE3AC5D286C3EA400770052 /* LaunchScreen.storyboard */,
 				CCE3AC60286C3EA400770052 /* Info.plist */,
+				CC8A05CB28738F51007B28C0 /* AuthenticationHandler.swift */,
 			);
 			path = Charger;
 			sourceTree = "<group>";
@@ -143,11 +156,14 @@
 			isa = PBXGroup;
 			children = (
 				CCE3AC8F286C612600770052 /* SplashController.swift */,
-				CCE3AC56286C3EA100770052 /* ViewController.swift */,
+				CCE3AC56286C3EA100770052 /* LoginViewController.swift */,
 				CCBD27E928705B4500BF8D89 /* AppointmentsViewController.swift */,
 				CCBD27F12871A42F00BF8D89 /* ProfileViewController.swift */,
+				CCBD27F92871FB9300BF8D89 /* CitySelectionViewController.swift */,
 				CCE3AC54286C3EA100770052 /* SceneDelegate.swift */,
 				CCE3AC52286C3EA100770052 /* AppDelegate.swift */,
+				CCBD280A28722F3600BF8D89 /* CityTableViewCell.swift */,
+				CCBD280B28722F3600BF8D89 /* CityTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +178,7 @@
 		CCE3AC87286C574000770052 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				CC8A05C6287384B0007B28C0 /* CitySelectionViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -169,6 +186,7 @@
 		CCE3AC88286C575D00770052 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				CCBD280228721ECE00BF8D89 /* CityService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -285,6 +303,7 @@
 			files = (
 				CCE3AC5F286C3EA400770052 /* LaunchScreen.storyboard in Resources */,
 				CCE3AC5C286C3EA400770052 /* Assets.xcassets in Resources */,
+				CCBD280D28722F3700BF8D89 /* CityTableViewCell.xib in Resources */,
 				CCE3AC5A286C3EA100770052 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,12 +329,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCBD280C28722F3700BF8D89 /* CityTableViewCell.swift in Sources */,
 				CCBD27F22871A42F00BF8D89 /* ProfileViewController.swift in Sources */,
 				CCE3AC90286C612600770052 /* SplashController.swift in Sources */,
-				CCE3AC57286C3EA100770052 /* ViewController.swift in Sources */,
+				CCE3AC57286C3EA100770052 /* LoginViewController.swift in Sources */,
+				CC8A05CC28738F51007B28C0 /* AuthenticationHandler.swift in Sources */,
 				CCE3AC53286C3EA100770052 /* AppDelegate.swift in Sources */,
+				CC8A05C7287384B0007B28C0 /* CitySelectionViewModel.swift in Sources */,
 				CCE3AC55286C3EA100770052 /* SceneDelegate.swift in Sources */,
 				CCBD27EA28705B4500BF8D89 /* AppointmentsViewController.swift in Sources */,
+				CCBD280328721ECE00BF8D89 /* CityService.swift in Sources */,
+				CCBD27FA2871FB9300BF8D89 /* CitySelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

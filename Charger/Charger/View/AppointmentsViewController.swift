@@ -27,7 +27,7 @@ class AppointmentsViewController: UIViewController {
         
         //UINavigationItem configured
         self.navigationItem.title = "Randevular"
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "Badge"), style: .plain, target: self, action: #selector(profileClicked))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "Users")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(profileClicked))
         
         navigationItem.backButtonTitle = ""
         

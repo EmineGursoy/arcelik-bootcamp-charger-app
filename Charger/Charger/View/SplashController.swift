@@ -41,10 +41,17 @@ class SplashController: UIViewController {
     //UI is set
     private func setUpUI(){
         
-        logoImageView.image = UIImage(named:"Badge1")
+        //Background color set
+        self.view.backgroundColor = UIColor(named: "Dark")
+        
+        //Image View configured
+        logoImageView.image = UIImage(named:"03")
+        
+        //Label configured
         appNameLabel.text = "Charger"
+        appNameLabel.textColor = UIColor(named: "solid  - white")
         appNameLabel.textAlignment = .center
-        appNameLabel.font = UIFont.boldSystemFont(ofSize: 30)
+        appNameLabel.font = UIFont.boldSystemFont(ofSize: 60)
         appNameLabel.numberOfLines = 0
        }
 

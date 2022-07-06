@@ -14,6 +14,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var logInButton: UIButton!
     
+    private let authenticationHandler = AuthenticationHandler.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
@@ -42,6 +44,8 @@ class LoginViewController: UIViewController {
         emailTextField.placeholder = "E-POSTA ADRESİNİZ:"
         emailTextField.textColor = UIColor(named: "grayscale -  gray 25")
         emailTextField.borderStyle = .roundedRect
+        emailTextField.font = .systemFont(ofSize: 20)
+        
         
         //Title label configured
         titleLabel.textAlignment = .center
@@ -62,9 +66,22 @@ class LoginViewController: UIViewController {
     
     //When the login button is clicked, transition to the appointment page is provided.
     @IBAction func logInButtonClicked(_ sender: Any) {
+        guard let email = emailTextField.text,
+              !email.isEmpty else {
+            return
+        }
         
-        if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AppointmentsViewController") as? AppointmentsViewController {
-            navigationController?.pushViewController(vc, animated: true)
+        authenticationHandler.login(email: email) { error in
+            guard error == nil else {
+                print(error)
+                return
+            }
+            
+            DispatchQueue.main.async {
+                if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AppointmentsViewController") as? AppointmentsViewController {
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+            }
         }
     }
 }
