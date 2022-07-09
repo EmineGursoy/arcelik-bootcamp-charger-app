@@ -55,6 +55,8 @@ class CitySelectionViewController: UIViewController {
         
         self.navigationController?.navigationBar.tintColor = UIColor(named: "grayscale -  gray 25")
         
+        self.navigationItem.backButtonTitle = ""
+        
         self.containerView.backgroundColor = UIColor(named: "Charcoal grey")
         
         self.citySearchBar.placeholder = "Şehir Ara"
@@ -98,6 +100,11 @@ extension CitySelectionViewController: UISearchBarDelegate {
 extension CitySelectionViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //print("\(indexPath.row)")
+        //The transition to the page with the stations in the selected city is provided.
+        if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "StationSelectionViewController") as? StationSelectionViewController {
+            navigationController?.pushViewController(vc, animated: true)
+            vc.selectedCity = filteredCities[indexPath.row].cityName
+        }
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50

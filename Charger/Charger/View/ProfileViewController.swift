@@ -15,6 +15,8 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var logOutButton: UIButton!
     @IBOutlet weak var containerView: UIView!
     
+    private let authenticationHandler = AuthenticationHandler.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

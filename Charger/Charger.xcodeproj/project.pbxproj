@@ -11,6 +11,9 @@
 		CC7C02BA286CEE1B008ADF59 /* NotificationPermission in Frameworks */ = {isa = PBXBuildFile; productRef = CC7C02B9286CEE1B008ADF59 /* NotificationPermission */; };
 		CC8A05C7287384B0007B28C0 /* CitySelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A05C6287384B0007B28C0 /* CitySelectionViewModel.swift */; };
 		CC8A05CC28738F51007B28C0 /* AuthenticationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A05CB28738F51007B28C0 /* AuthenticationHandler.swift */; };
+		CC8A05D7287600C0007B28C0 /* StationSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A05D6287600C0007B28C0 /* StationSelectionViewController.swift */; };
+		CC8A05E828761B5D007B28C0 /* StationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A05E628761B5D007B28C0 /* StationTableViewCell.swift */; };
+		CC8A05E928761B5D007B28C0 /* StationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC8A05E728761B5D007B28C0 /* StationTableViewCell.xib */; };
 		CCBD27EA28705B4500BF8D89 /* AppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBD27E928705B4500BF8D89 /* AppointmentsViewController.swift */; };
 		CCBD27F22871A42F00BF8D89 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBD27F12871A42F00BF8D89 /* ProfileViewController.swift */; };
 		CCBD27FA2871FB9300BF8D89 /* CitySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBD27F92871FB9300BF8D89 /* CitySelectionViewController.swift */; };
@@ -48,6 +51,9 @@
 /* Begin PBXFileReference section */
 		CC8A05C6287384B0007B28C0 /* CitySelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionViewModel.swift; sourceTree = "<group>"; };
 		CC8A05CB28738F51007B28C0 /* AuthenticationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHandler.swift; sourceTree = "<group>"; };
+		CC8A05D6287600C0007B28C0 /* StationSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSelectionViewController.swift; sourceTree = "<group>"; };
+		CC8A05E628761B5D007B28C0 /* StationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTableViewCell.swift; sourceTree = "<group>"; };
+		CC8A05E728761B5D007B28C0 /* StationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationTableViewCell.xib; sourceTree = "<group>"; };
 		CCBD27E928705B4500BF8D89 /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
 		CCBD27F12871A42F00BF8D89 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CCBD27F92871FB9300BF8D89 /* CitySelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionViewController.swift; sourceTree = "<group>"; };
@@ -160,10 +166,13 @@
 				CCBD27E928705B4500BF8D89 /* AppointmentsViewController.swift */,
 				CCBD27F12871A42F00BF8D89 /* ProfileViewController.swift */,
 				CCBD27F92871FB9300BF8D89 /* CitySelectionViewController.swift */,
+				CC8A05D6287600C0007B28C0 /* StationSelectionViewController.swift */,
 				CCE3AC54286C3EA100770052 /* SceneDelegate.swift */,
 				CCE3AC52286C3EA100770052 /* AppDelegate.swift */,
 				CCBD280A28722F3600BF8D89 /* CityTableViewCell.swift */,
 				CCBD280B28722F3600BF8D89 /* CityTableViewCell.xib */,
+				CC8A05E628761B5D007B28C0 /* StationTableViewCell.swift */,
+				CC8A05E728761B5D007B28C0 /* StationTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -303,6 +312,7 @@
 			files = (
 				CCE3AC5F286C3EA400770052 /* LaunchScreen.storyboard in Resources */,
 				CCE3AC5C286C3EA400770052 /* Assets.xcassets in Resources */,
+				CC8A05E928761B5D007B28C0 /* StationTableViewCell.xib in Resources */,
 				CCBD280D28722F3700BF8D89 /* CityTableViewCell.xib in Resources */,
 				CCE3AC5A286C3EA100770052 /* Main.storyboard in Resources */,
 			);
@@ -331,6 +341,8 @@
 			files = (
 				CCBD280C28722F3700BF8D89 /* CityTableViewCell.swift in Sources */,
 				CCBD27F22871A42F00BF8D89 /* ProfileViewController.swift in Sources */,
+				CC8A05E828761B5D007B28C0 /* StationTableViewCell.swift in Sources */,
+				CC8A05D7287600C0007B28C0 /* StationSelectionViewController.swift in Sources */,
 				CCE3AC90286C612600770052 /* SplashController.swift in Sources */,
 				CCE3AC57286C3EA100770052 /* LoginViewController.swift in Sources */,
 				CC8A05CC28738F51007B28C0 /* AuthenticationHandler.swift in Sources */,

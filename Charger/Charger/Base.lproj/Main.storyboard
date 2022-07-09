@@ -334,11 +334,56 @@
                         <outlet property="citiesTableView" destination="fRd-w2-4EP" id="hEc-bh-Dcb"/>
                         <outlet property="citySearchBar" destination="ad2-hN-Kzb" id="NfP-KV-AsY"/>
                         <outlet property="containerView" destination="awz-So-aQs" id="HCl-FQ-e8F"/>
+                        <segue destination="v9r-oO-gBo" kind="show" id="7W3-xm-eKJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0EQ-CX-yMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2360.8695652173915" y="470.75892857142856"/>
+        </scene>
+        <!--Station Selection View Controller-->
+        <scene sceneID="kNF-cU-UhS">
+            <objects>
+                <viewController storyboardIdentifier="StationSelectionViewController" id="v9r-oO-gBo" customClass="StationSelectionViewController" customModule="Charger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="URz-ZP-X1A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiX-28-piO">
+                                <rect key="frame" x="20" y="118" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="d5s-Ds-byw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EP2-xU-wqO">
+                                <rect key="frame" x="0.0" y="158" width="414" height="704"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cpx-Q4-IVb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EP2-xU-wqO" firstAttribute="top" secondItem="qiX-28-piO" secondAttribute="bottom" id="IwW-dr-WlO"/>
+                            <constraint firstItem="EP2-xU-wqO" firstAttribute="leading" secondItem="Cpx-Q4-IVb" secondAttribute="leading" id="PGS-jI-fdy"/>
+                            <constraint firstItem="qiX-28-piO" firstAttribute="leading" secondItem="Cpx-Q4-IVb" secondAttribute="leading" constant="20" id="TJj-DB-4e6"/>
+                            <constraint firstItem="Cpx-Q4-IVb" firstAttribute="bottom" secondItem="EP2-xU-wqO" secondAttribute="bottom" id="bHW-0e-MDB"/>
+                            <constraint firstItem="Cpx-Q4-IVb" firstAttribute="trailing" secondItem="EP2-xU-wqO" secondAttribute="trailing" id="ffe-jA-Opx"/>
+                            <constraint firstItem="qiX-28-piO" firstAttribute="top" secondItem="Cpx-Q4-IVb" secondAttribute="top" constant="30" id="oKg-U5-1sM"/>
+                            <constraint firstItem="Cpx-Q4-IVb" firstAttribute="trailing" secondItem="qiX-28-piO" secondAttribute="trailing" constant="20" id="qiD-xm-oYx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fgU-A9-Qdh"/>
+                    <connections>
+                        <outlet property="numberOfResultsLabel" destination="qiX-28-piO" id="BwM-u7-iAG"/>
+                        <outlet property="stationsTableView" destination="EP2-xU-wqO" id="3cF-Tj-8em"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PYL-fz-E8n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3244.9275362318845" y="470.75892857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gVv-Dn-eHA">
